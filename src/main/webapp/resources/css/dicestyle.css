@@ -1,0 +1,141 @@
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  float: right;
+  max-width: 350px;
+  width: 27.5%;
+  margin-bottom: 3%;
+  background-color: #ECF0F1;
+}
+
+.die-container {
+  margin: 10px;
+  position: relative;
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  perspective: 600px;
+}
+
+.die {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+
+.die	div {
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  display: block;
+	  width: 150px;
+	  height: 150px;
+		margin: 0;
+		line-height: 150px;
+		font-size: 4em;
+		color: #ECF0F1;
+		text-align: center;
+	  background-color: #1ABC9C;
+	  border: 2px solid #fff;
+	  transition: background-color 0.3s ease;
+	}
+
+	.die .one {
+		transform: rotateY(0deg) translateZ(75px);
+	}
+	.die .two {
+		transform: rotateX(180deg) translateZ(75px);
+	}
+	.die .three {
+		transform: rotateY(90deg) translateZ(75px);
+	}
+	.die .four {
+		transform: rotateY(-90deg) translateZ(75px);
+	}
+	.die .five {
+		transform: rotateX(90deg) translateZ(75px);
+	}
+	.die .six {
+		transform: rotateX(-90deg) translateZ(75px);
+	}
+  
+	.die.show-1 {
+		transform: translateZ(-75px) rotateY(0deg);
+	}
+	.die.show-2 {
+		transform: translateZ(-75px) rotateX(-180deg);
+	}
+	.die.show-3 {
+		transform: translateZ(-75px) rotateY(-90deg);
+	}
+	.die.show-4 {
+		transform: translateZ(-75px) rotateY(90deg);
+	}
+	.die.show-5 {
+		transform: translateZ(-75px) rotateX(-90deg);
+	}
+	.die.show-6 {
+		transform: translateZ(-75px) rotateX(90deg);
+	}
+
+
+.roll-btn {
+  display: block;
+  margin: 20px 15px 0;
+  padding: 0 40px;
+  width: 90%;
+  height: 45px;
+  line-height: 45px;
+  background: #1ABC9C;
+  color: #FFF;
+  font-size: 17px;
+  border: 2px solid #ECF0F1;
+  outline: 0;
+  border-bottom: 4px solid darken(#1ABC9C, 10%);
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+}
+
+.buttonStyle {
+  display: block;
+  margin: 20px 15px 0;
+  padding: 0 40px;
+  width: 90%;
+  height: 45px;
+  line-height: 45px;
+  background: #1ABC9C;
+  color: #FFF;
+  font-size: 17px;
+  border: 2px solid #ECF0F1;
+  outline: 0;
+  border-bottom: 4px solid darken(#1ABC9C, 10%);
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+}
+
+.buttonStyleDisable {
+  display: block;
+  margin: 20px 15px 0;
+  padding: 0 40px;
+  width: 90%;
+  height: 45px;
+  line-height: 45px;
+  background: #ECF0F1;
+  color: #1ABC9C;
+  font-size: 17px;
+  border: 2px solid #1ABC9C;
+  outline: 0;
+  border-bottom: 4px solid darken(#1ABC9C, 10%);
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+}
